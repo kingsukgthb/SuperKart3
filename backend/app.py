@@ -9,8 +9,8 @@ from flask import Flask, request, jsonify  # For creating the Flask API
 superkart_api = Flask("SuperKart")
 
 # Load the trained model
-#model = joblib.load("superkart_model.joblib")
-model = joblib.load("sales_forecasting_model_v1_0.joblib")
+model = joblib.load("superkart_model.joblib")
+
 # Define a route for the home page
 @superkart_api.get('/')
 def home():
